@@ -11,7 +11,7 @@ const CORES_PRESET = [
 ];
 
 export function ConfigPage() {
-  const { config, updateConfig, disciplinas, addDisciplina, removeDisciplina, semestre, setSemestre } =
+  const { config, updateConfig, disciplinas, addDisciplina, removeDisciplina, semestre } =
     useAppStore();
 
   const [nomeUsuario, setNomeUsuario] = useState(config.nomeUsuario);

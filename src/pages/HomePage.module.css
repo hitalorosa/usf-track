@@ -1,0 +1,157 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.greeting h1 {
+  font-size: 1.6rem;
+  color: var(--text-primary);
+}
+
+.date {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: var(--space-1);
+  text-transform: capitalize;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  transition: background-color var(--transition-base);
+}
+
+.cardTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Aulas */
+.aulasList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.aulaItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px dashed var(--border-dashed);
+}
+
+.aulaItem:last-child {
+  border-bottom: none;
+}
+
+.discDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.aulaName {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  display: block;
+}
+
+.aulaHora {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+/* Prova */
+.provaTitle {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: var(--space-1);
+}
+
+.provaInfo {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.countdown {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Tarefas */
+.taskList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px dashed var(--border-dashed);
+}
+
+.taskItem:last-child {
+  border-bottom: none;
+}
+
+.urgencyBar {
+  width: 4px;
+  height: 36px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.taskInfo {
+  flex: 1;
+}
+
+.taskTitle {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  display: block;
+}
+
+.taskMeta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Frase */
+.quote {
+  background-color: var(--bg-secondary);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-4) var(--space-5);
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
